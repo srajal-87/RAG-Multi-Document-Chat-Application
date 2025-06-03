@@ -70,20 +70,6 @@ The application will open in your default browser at `http://localhost:8501`
 
 ## 📦 Installation
 
-### Using pip
-
-```bash
-# Install required packages
-pip install streamlit
-pip install PyPDF2
-pip install python-docx
-pip install langchain
-pip install langchain-community
-pip install langchain-openai
-pip install faiss-cpu
-pip install python-dotenv
-```
-
 ### Using requirements.txt
 
 Create a `requirements.txt` file:
@@ -137,46 +123,6 @@ rag-document-chat/
 └── README.md             # This file
 ```
 
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-1. **OpenAI API Error**
-   ```
-   Error: Invalid OpenAI API key
-   ```
-   - Verify your API key in the `.env` file
-   - Ensure sufficient API credits
-
-2. **File Processing Error**
-   ```
-   Error reading PDF: ...
-   ```
-   - Check file format and corruption
-   - Ensure file is not password-protected
-
-3. **Memory Issues**
-   ```
-   Error: Token limit exceeded
-   ```
-   - Reduce chunk size or document length
-   - Clear chat history using Reset button
-
-4. **Installation Issues**
-   ```
-   ModuleNotFoundError: No module named 'faiss'
-   ```
-   - Install FAISS: `pip install faiss-cpu`
-   - For GPU: `pip install faiss-gpu`
-
-### Performance Tips
-
-- **Large Documents**: Process documents in smaller batches
-- **Memory Usage**: Clear chat history regularly
-- **Response Time**: Reduce chunk size for faster responses
-- **API Costs**: Monitor OpenAI usage in your dashboard
-
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
@@ -198,18 +144,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [LangChain](https://python.langchain.com/) for the RAG framework
 - [Streamlit](https://streamlit.io/) for the web application framework
 - [FAISS](https://github.com/facebookresearch/faiss) for vector similarity search
-
-
-
-## 🔮 Roadmap
-
-- [ ] Support for more file formats (PPTX, CSV, etc.)
-- [ ] Document similarity visualization
-- [ ] Export chat history
-- [ ] Multi-language support
-- [ ] Integration with cloud storage services
-- [ ] Advanced retrieval strategies
-- [ ] Custom embedding models
 
 ---
 
